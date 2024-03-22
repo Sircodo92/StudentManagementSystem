@@ -23,8 +23,8 @@
             hybridStudent.EnrollCourse("Geography");
             hybridStudent.EnrollCourse("Economics");
 
-            // Add students to the StudentManager
-            StudentManager studentManager = StudentManager.GetInstance(); // Singleton
+            // Add students to the IStudentManager
+            IStudentManager studentManager = IStudentManager.GetInstance(); // Singleton
             studentManager.AddStudent(inPersonStudent);
             studentManager.AddStudent(onlineStudent);
             studentManager.AddStudent(hybridStudent);

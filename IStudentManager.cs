@@ -7,27 +7,27 @@ using System.Threading.Tasks;
 namespace StudentManagementSystem
 {
     // Singleton class to manage students
-    public class StudentManager
+    public class IStudentManager
     {
-        // Static instance of the StudentManager class
-        private static StudentManager instance;
+        // Static instance of the IStudentManager class
+        private static IStudentManager instance;
         // List to store students
         private List<Student> students;
 
         // Private constructor to prevent instantiation from outside the class
-        private StudentManager()
+        private IStudentManager()
         {
             // Initialize the list of students
             students = new List<Student>();
         }
 
-        // Method to get the instance of the StudentManager class
-        public static StudentManager GetInstance()
+        // Method to get the instance of the IStudentManager class
+        public static IStudentManager GetInstance()
         {
             // If the instance is null, create a new instance
             if (instance == null)
             {
-                instance = new StudentManager();
+                instance = new IStudentManager();
             }
             // Return the instance
             return instance;
